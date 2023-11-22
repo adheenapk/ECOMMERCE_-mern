@@ -361,7 +361,6 @@ export const braintreeTokenController = async (req, res) => {
         gateway.clientToken.generate({}, function (err, response) {
             if (err) {
                 res.status(201).send(err)
-                console.log(1)
             } else {
                 res.send(response)
             }
